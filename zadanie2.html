@@ -1,0 +1,21 @@
+<html>
+ <head>
+ <title>Zadanie 2</title>
+ <script language="JavaScript">
+ function WinOpen_wolny()
+ {
+window.open("menu.html","okienko","toolbar=no,directories=no,menubar=no,height=180,width=1060,top=100,left=500");
+ }
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button" name="przycisk" value="Naciśnij mnie!" onclick="WinOpen_wolny(' ')">
+ </form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
