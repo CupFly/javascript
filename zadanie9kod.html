@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=65 rows=18><html>
+<body>
+<div style="color:green;font-size:39px;">
+<script language="JavaScript">
+var D1_but=prompt("dzien1=","");
+var D2_but=prompt("dzien2=","");
+var G1_but=prompt("godzina1=","");
+var G2_but=prompt("godzina2=","");
+var suma;
+var a=parseFloat(D1_but);
+var b=parseFloat(D2_but);
+var c=parseFloat(G1_but);
+var d=parseFloat(G2_but);
+suma=(a*86400+c*3600)-(b*86400+d*3600);
+document.write("ilosc sekund = "+suma+"<br>");
+</script>
+</div>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
