@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=65 rows=30><html> 
+<head> 
+<style>
+body {
+color:blue;
+font-size:35px;
+background-color:grey;
+}
+</style>
+</head>
+<body>
+ <script language="JavaScript">
+var x1_wol=prompt("podaj x1=","");
+var x2_wol=prompt("podaj x2=","");
+var y1;
+var y2;
+var y3;
+var x1_s;
+x1=parseFloat(x1_wol);
+x2=parseFloat(x2_wol);
+y1=3 * Math.pow(x1,3 / 4);
+y2=2 * Math.cos(x1) + 3 * Math.sin(x1);
+y3=Math.cbrt(Math.pow(x1, 5) + 2 * Math.pow(x2, 4) * Math.abs(x1 - x2));
+x1_s=(x1*Math.PI)/180;
+var a=y1.toFixed(2);
+var b=y2.toFixed(2);
+var c=y3.toFixed(2);
+var d=x1_s.toFixed(2);
+document.write("x1 = "+x1+" x2 = "+x2+"<br> x1 = "+x1+" x1 = "+d+"<br> y1 = "+a+"<br> y2 = "+b+"<br> y3 = "+c+"<br>");
+ </script>
+</body> 
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

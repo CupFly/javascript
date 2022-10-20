@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=49><html> 
+<head> 
+<title>
+ Przykład obliczenia Obw i P prostokąta
+</title>
+ <script language="JavaScript">
+function Obw(b1,b2)
+{
+ b1_liczba=parseFloat(b1)
+ b2_liczba=parseFloat(b2)
+ Obw_wynik=2*b1_liczba+2*b2_liczba
+ document.getElementsByName('obw')[0].value=Obw_wynik.toFixed(2); /* na dokument */
+ alert("Obw="+Obw_wynik.toFixed(2)+"cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm^2"+"<br>"; /* do tabeli */
+}
+function P(b1,b2)
+{
+ b1_liczba=parseFloat(b1)
+ b2_liczba=parseFloat(b2)
+ P_wynik=b1_liczba*b2_liczba
+ document.getElementsByName('pole')[0].value=P_wynik.toFixed(2);
+ alert("P="+P_wynik.toFixed(2)+"cm");
+ pokaz2.innerHTML="P="+P_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie Obw i P prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="Obw(this.bok1.value,this.bok2.value); 
+P(this.bok1.value,this.bok2.value);return false"> 
+ Podaj b1=
+ <input size="6" name="bok1">
+ Podaj b2=
+ <input size="6" name="bok2">
+ <br><br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Obwód=
+ <input size="6" name="obw">
+ Pole=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

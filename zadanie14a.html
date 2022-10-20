@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+div {
+color:red;
+font-size:55px;
+}
+</style>
+</head>
+<body>
+<div>
+<script language="JavaScript">
+var b_wol=prompt("podaj bok b=","");
+var c_wol=prompt("podaj bok c=","");
+var b=parseFloat(b_wol);
+var c=parseFloat(c_wol);
+pot=Math.pow(c,2) - Math.pow(b,2);
+a=Math.sqrt(pot);
+cos=b/c;
+sin=a/c;
+tg=a/b;
+ctg=b/a;
+document.write("cos(α)="+cos.toFixed(2)+"<br>"+"sin(α)="+sin.toFixed(2)+"<br>"+"tg(α)="+tg.toFixed(2)+"<br>"+"ctg(α)="+ctg.toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>

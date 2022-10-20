@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=33><html>
+<head>
+<title> Użycie fukcji </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_wol(a,b) {
+return a + b;
+}
+function odejmowanie_wol(a,b) {
+return a - b;
+}
+function mnozenie_wol(a,b) {
+return a * b;
+}
+function od_kwadratu_wol(a,b) {
+return Math.pow(a,2);
+return Math.pow(b,2);
+}
+function reszta_z_dzielenia_a_przez_b_wol(a,b) {
+return a % b;
+}
+document.write("suma="+suma_wol(a,b)+"<br>"+"odejmowanie="+odejmowanie_wol(a,b)+"<br>"+"mnozenie="+mnozenie_wol(a,b)+"<br>"+"od kwadratu="+od_kwadratu_wol(a)+" i "+od_kwadratu_wol(b)+"<br>"+"reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_wol(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html></textarea><br>
+<input type="wolton" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

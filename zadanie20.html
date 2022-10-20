@@ -1,0 +1,51 @@
+<html> 
+<head> 
+ <script language="JavaScript">
+function Pow_wolny(a,b,h)
+{
+ a_wol=parseFloat(a);
+ b_wol=parseFloat(b);
+ h_wol=parseFloat(h);
+ Pow_wol=(a_wol+b_wol)/2*h_wol;
+ document.getElementsByName('pow')[0].value=Pow_wol.toFixed(2);
+ pokaz1.innerHTML="Pole="+Pow_wol.toFixed(2)+"<br>";
+}
+function Obw_wolomski(a,b,h)
+{
+ a_wol=parseFloat(a);
+ b_wol=parseFloat(b);
+ h_wol=parseFloat(h);
+ a2_wol=(a_wol-b_wol)/2;
+ c_wol=Math.pow(a2_wol,2) + Math.pow(h_wol,2);
+ c2_wol=Math.sqrt(c_wol);
+ Obw_wol=a_wol+b_wol+c2_wol+c2_wol;
+ document.getElementsByName('obw')[0].value=Obw_wol.toFixed(2);
+ pokaz2.innerHTML="Obwód="+Obw_wol.toFixed(2)+"<br>";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie pole i obwód trapezu równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pow_wolny(this.a.value,this.b.value,this.h.value); 
+Obw_wolomski(this.a.value,this.b.value,this.h.value);return false"> 
+ Podaj a=
+ <input size="6" name="a">
+ Podaj b=
+ <input size="6" name="b">
+ Podaj h=
+ <input size="6" name="h">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Pole=
+ <input size="6" name="pow">
+ Obwód=
+ <input size="6" name="obw">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>

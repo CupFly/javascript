@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+color:red;
+font-size:55px;
+background-color:blue;
+}
+</style>
+</head>
+<body>
+<script language="JavaScript">
+var x_wol=prompt("podaj stopnie=","");
+var x=parseFloat(x_wol);
+y_wol=x*Math.PI/180;
+document.write("Radiany="+y_wol.toFixed(2)+"<br>");
+var y_wol=prompt("podaj radiany=","");
+var y=parseFloat(y_wol);
+x_wol=180*y/Math.PI;
+document.write("Stopnie="+x_wol.toFixed(2)+"°<br>");
+</script>
+</body>
+</html>

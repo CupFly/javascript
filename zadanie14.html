@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<style>
+body {
+color:red;
+font-size:55px;
+background-color:blue;
+}
+</style>
+<title>
+zadanie 14
+</title>
+</head>
+<body>
+ <script language="JavaScript">
+var No=prompt("podaj No=","");
+var t=prompt("podaj t=","");
+var T=prompt("podaj T=","");
+var y;
+var N;
+No=parseFloat(No);
+t=parseFloat(t);
+T=parseFloat(T);
+y=Math.log(2)/T;
+N=No*Math.pow(Math.E,-(y*t));
+document.write("N0="+No.toFixed(2)+"[sztuk] <br> t="+t.toFixed(2)+"[lat] <br> T1/2="+T.toFixed(2)+"[lat] <br> Lambda="+y.toFixed(7)+"[1/rok] <br> N="+N.toFixed(7)+"[sztuk]");
+ </script>
+</body> 
+</html>
+<!-- Łukasz Wolny -->
