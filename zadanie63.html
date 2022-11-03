@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<meta charset="utf-8">
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+document.write("<font color=green size=4>MENU</font>"+"<br>");
+document.write("<font color=red size=4>1-Czerwony</font>"+"<br>");
+document.write("<font color=blue size=4>2-Niebieski</font>"+"<br>");
+function obl(a)
+{
+if(a==1 || a.toLowerCase()=="czerwony")
+{
+pokaz.innerHTML="<font color=red size=7>wpisałes kolor czerwony</font>";
+}
+else if(a==2 || a.toLowerCase()=="niebieski")
+{
+pokaz.innerHTML="<font color=blue size=1>wpisałes kolor niebieski</font>";
+}
+else
+{
+pokaz.innerHTML="Nie ma takiego koloru";
+}
+}
+</script>
+<form name="formularz" action="..." onsubmit="obl(this.kolor.value);return false"> 
+ <input size="6" name="kolor">
+ <input TYPE="submit" Value="oblicz">
+</form>
+<table>
+ <tr id="pokaz"></tr>
+</table>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

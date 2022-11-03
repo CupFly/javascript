@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=25><html><!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+var wiezowiec = {
+wysokosc: '311 metrów',
+ilosc_pieter: '54 pięter',
+winda: 'jest winda',
+wiezowiec_wyswietl_wolny: function ()
+{
+document.write(this.wysokosc+', '+this.ilosc_pieter+' i '+this.winda)
+}
+}
+wiezowiec.wiezowiec_wyswietl_wolny();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

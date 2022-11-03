@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=46><!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+function wiezowiec(pietra_b,wysokosc_b,winda_b)//początek konstruktora
+{
+this.pietra=pietra_b;
+this.wysokosc=wysokosc_b;
+this.winda=winda_b;
+}//koniec konstruktora
+wiezowiec.prototype.wypisz = function () //definicja metody
+{
+alert(this.pietra + ' ' + this.wysokosc+ ' ' + this.winda);
+};
+var wiezowiec1 = new wiezowiec("30 pięter", "100 metrów", "jest winda"); // nowy obiekt osoba1
+var wiezowiec2 = new wiezowiec('35 pięter', '150 metrów', 'jest winda');
+var wiezowiec3 = new wiezowiec('49 pięter', '260 metrów', 'jest winda');
+wiezowiec1.wypisz();
+wiezowiec2.wypisz();
+wiezowiec3.wypisz();
+wiezowiec.prototype.wiezowiec_pokaz_wolny=function() {alert('kupiec: ' + this.kupiec)}
+wiezowiec1.kupiec='Kacper Dąbrowski';
+wiezowiec2.kupiec='Łukasz Wolny';
+wiezowiec3.kupiec='Filip Maszota';
+wiezowiec1.wiezowiec_pokaz_wolny();
+wiezowiec2.wiezowiec_pokaz_wolny();
+wiezowiec3.wiezowiec_pokaz_wolny();
+document.write("Wiezowce i właściciele"+"<br>");
+document.write("wiezowiec jeden"+" "+wiezowiec1.pietra+" "+wiezowiec1.wysokosc+" "+wiezowiec1.winda+" "+wiezowiec1.kupiec+"<br>");
+document.write("wiezowiec dwa"+" "+wiezowiec2.pietra+" "+wiezowiec2.wysokosc+" "+wiezowiec2.winda+" "+wiezowiec2.kupiec+"<br>");
+document.write("wiezowiec trzy"+" "+wiezowiec3.pietra+" "+wiezowiec3.wysokosc+" "+wiezowiec3.winda+" "+wiezowiec3.kupiec+"<br>");
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

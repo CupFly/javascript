@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+
+var rok_but=prompt("podaj liczbę =","");
+var a=parseFloat(rok_but);
+if(a==1995)
+{
+document.write("<font color=blue size=4>Brawo, znasz rok od kiedy działa Javasript</font>"+"<br>");
+}
+else
+{
+document.write("<font color=czerwony size=7>Źle, musisz jeszcze poczytać</font>"+"<br>");
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

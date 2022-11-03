@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+<h1>Rodzaje "filozofii" programowania.</h1>
+<ul><li>Programowanie strukturalne</li>
+<li>Programowanie obiektowe</li></ul>
+<h1>Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego.</h1>
+<ul><li>paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli.
+Programowanie strukturalne zwiększa czytelność i ułatwia analizę programów, co stanowi znaczącą poprawę w stosunku do trudnego w utrzymaniu „spaghetti code” często wynikającego z użycia instrukcji goto.</li></ul>
+<ol><li>Podzielone bloki kodu mają jeden punkt wejścia (mogą mieć wiele punktów wyjścia),</li>
+<li>Wykonywanie wyrażeń w określonej kolejności,</li>
+<li>Używanie instrukcji warunkowych (if, if else),</li>
+<li>Używanie pętli (for, while, do while),</li>
+<li>Unikanie instrukcji skoku (goto),</li>
+<li>Unikanie instrukcji break, continua,</li>
+<li>W programowaniu proceduralnym (strukturalne) funkcje i zmienne opisujące dany przedmiot nie są ze sobą powiązane.</li></ol>
+<h1>Programowanie obiektowe:</h1>
+<ul><li>Programowanie obiektowe jest to podejście bardziej naturalne dla ludzi, bardziej zgodne z rzeczywistością. W pamięci komputera tworzona jest wirtualna rzeczywistość. Definiowane (powoływane są do wirtualnego życia w pamięci komputera) obiekty na podstawie wcześniej zdefiniowanych klas. Obiekty mają zdefiniowane metody oraz pola.
+Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, w którym programy definiuje się za pomocą:</li>
+<ul>obiektów (obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę) np. okienka w Windows - okienko jest obiektem,</li>
+<li>obiekt ma jakiś stan (czyli dane, w programowaniu obiektowym nazywane najczęściej polami) np. wielość okienka w Windows,</li>
+<li>obiekt wykazuje pewne zachowanie (czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). Np. jest zdefiniowana metoda do zmiany wielkości okienka.</li></ul>
+Czyli obiektowy program komputerowy wyrażony jest jako zbiór takich obiektów, komunikujących się pomiędzy sobą w celu wykonywania zadań.</li></ul>
+<h1>Dlaczego stosujemy programowanie obiektowe?</h1>
+<ol><li>Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej</li>
+<li>Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt.</li>
+W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka.
+<li>W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu przez innych programistów. Zaoszczędza to czas i środki pieniężne.</li></ol>
+<h1>Omów następujące pojęcia ( w krótkiej formie)</h1>
+<ul><li>Klasa - opisuje nam jak będą wyglądać tworzone na jej podstawie nowe obiekty</li>
+<li>Obiekt - są konstrukcjami programistycznymi mającymi tak zwane właściwości (inaczej pola obiektu), którymi mogą być zmienne lub inne obiekty</li>
+<li>Właściwość - własność obiektu, np. kolor.</li>
+<li>Metoda - umie wykonywać obiekt</li>
+<li>Konstruktor - metoda wywoływana w momencie inicjalizacji obiektu</li>
+<li>Dziedziczenie - wywoływany automatycznie podczas niszczenia obiektów</li>
+<li>Hermetyzacja - wewnątrz ciała klasy znajdują się pola i metody</li>
+<li>Polimorfizm - dany obiekt może zmieniać swoją postać w zależności od potrzeb</li></ul>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
