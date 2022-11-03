@@ -10,7 +10,7 @@ function Pow_wolny(a,b,h)
  document.getElementsByName('pow')[0].value=Pow_wol.toFixed(2);
  pokaz1.innerHTML="Pole="+Pow_wol.toFixed(2)+"<br>";
 }
-function Obw_wolomski(a,b,h)
+function Obw_wolny(a,b,h)
 {
  a_wol=parseFloat(a);
  b_wol=parseFloat(b);
@@ -28,7 +28,7 @@ function Obw_wolomski(a,b,h)
 Obliczanie pole i obwód trapezu równoramiennego
 <br> <br>
 <form name="formularz" action="..." onsubmit="Pow_wolny(this.a.value,this.b.value,this.h.value); 
-Obw_wolomski(this.a.value,this.b.value,this.h.value);return false"> 
+Obw_wolny(this.a.value,this.b.value,this.h.value);return false"> 
  Podaj a=
  <input size="6" name="a">
  Podaj b=
