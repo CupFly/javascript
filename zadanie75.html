@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var w = i * i + i + 41;
+
+for ( var i=0; i<=39; i++)
+{
+if (i%5==0)
+{
+document.write("--------------<br>");
+}
+var w = i * i + i + 41;
+document.write("i="+i+"&nbsp w("+i+")="+w+"<br>");
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

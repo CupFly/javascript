@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=30><!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+    var r_wol=prompt("Podaj r","");
+    var r=parseFloat(r_wol);
+    var j_wol = 0;
+    var d_wol = 0;
+    for (var i=Math.round(-r)-1; i<=Math.round(r)+1; i++)
+    {
+    for (var k=-r; k<=r; k++)
+    {
+    d_wol = Math.sqrt(i*i+k*k);
+    if (d_wol <= r)
+    {
+    j_wol++;
+    document.write("d="+d_wol.toFixed(2)+"<br>");
+    document.write("("+i+","+k+")"+"    ");
+    document.write("<br>");
+    }
+    }
+    }
+    document.write("<font size=\"20px\";>Ilość punktów: "+j_wol);
+    </script>
+    </head>
+    <body>
+    </body>
+    </html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

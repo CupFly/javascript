@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=27><!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+     function okno_zamknij()
+     {
+     window.close()
+     }
+    var l=prompt("Ile razy powtórzyć =","");
+    var m=parseFloat(l);
+    var a=prompt("podaj swoje inicjały =","");
+    for ( var i=1; i<=m; i++)
+    {
+    for ( var k=1; k<=i; k++)
+    {
+    document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+    }
+    document.write(i+"_"+a+"_"+i+"<br>");
+    }
+    </script>
+    </head>
+    <body>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+    </body>
+    </html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

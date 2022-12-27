@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var l1_t_wol=prompt("Podaj pierwszą liczbę","");
+var a=parseFloat(l1_t_wol);
+var l2_t_wol=prompt("Podaj drugą liczbę","");
+var b=parseFloat(l2_t_wol);
+
+if (a<b) {
+for ( var i=a; i<=b; i++)
+{
+if (i%2!=0)
+{
+document.write("<font color=\"green\"; font size=\"14px\">"+i+"<br>");
+}
+}
+}
+
+else if (a>b) {
+for ( var i=a; i>=b; i--)
+{
+if (i%2!=0)
+{
+document.write("<font color=\"blue\"; font size=\"28px\">"+i+"<br>");
+}
+}
+}
+
+else {
+confirm("Brak obliczeń");
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
